@@ -11,6 +11,9 @@ Description: This plugin adds [hcc_cancel], shortcode.  Generates a link to the 
 by a gravity form.
 Version: 0.1
 
+Author: zig
+Date: 2Jan18
+Author URI: http://wwww.reachmaine.com
 */
 defined( 'ABSPATH' ) or die( 'Direct access prohibited!' );
 
