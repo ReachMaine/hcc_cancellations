@@ -1,0 +1,9 @@
+blogid: 14
+form id:  6
+
+field number: 2
+
+
+SELECT * FROM `ea_14_rg_lead_detail` WHERE `form_id` = 6 and `field_number` = 2
+
+SELECT * FROM `ea_14_rg_lead_detail` WHERE `form_id` = 6 and `field_number` = 2 and value in ('2017-12-30', '2017-12-29')
