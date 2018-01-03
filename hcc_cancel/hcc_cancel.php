@@ -39,9 +39,9 @@ if (!function_exists('hcc_cancel_link')) {
     $blogid = $atts['blogid'];
     $fieldid = $atts['field'];
     $link =  $atts['link'];
-    $table_name = 'ea_14_rg_lead_detail'; // for ea multisite $wpdb->base_prefix
+    //$table_name = 'ea_14_rg_lead_detail'; // for ea multisite $wpdb->base_prefix
     if ($blogid) {
-        $table_name = $wpdb->base_prefix.$blogid."rg_lead_detail";
+        $table_name = $wpdb->base_prefix.$blogid."_rg_lead_detail";
     } else {
         $table_name = $wpdb->prefix."rg_lead_detail";
     }
@@ -59,9 +59,9 @@ if (!function_exists('hcc_cancel_link')) {
     if ($calresult) {
       $out_str = "<a href='//$link' class='hcc_cancel_link'>$link_text</a>";
     } else {
-      //$out_str = "<p>nope.</p>";
+      $out_str = "<p>nope.</p>";
     }
-    // return $calquery.$out_str;
+     //return $calquery.$out_str;
   	return $out_str;
 	}
 }
