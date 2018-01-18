@@ -69,9 +69,9 @@ if (!function_exists('hcc_cancel_link')) {
         $out_str .= $link_text;
       }
       $out_str .= "</a>";
-    } else {
+    } /* else {
       $out_str .= "<p>nope.</p>";
-    }
+    } */
      //return $calquery.$out_str;
   	return $out_str;
 	}
